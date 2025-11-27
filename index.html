@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hotspots</title>
+        <link href="style.css" rel="stylesheet" />
+        <style>
+            .afbeeldingContainer {
+                position: relative;
+                display: inline-block;
+            }
+
+            .afbeeldingContainer img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .hotspot {
+                position: absolute;
+                width: 100vh;
+                height: 100vh;
+                cursor: pointer;
+            }
+            .hotspot:hover {
+                background-color: rgba(255, 0, 0, 0.3);
+            }
+
+
+            .meneer1 {
+                clip-path: url(#meneertje1);
+            }
+            .meneer2 {
+                clip-path: url(#meneertje2);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="afbeeldingContainer">
+            <a href="meneertje1.html">
+                <div class="hotspot meneer1"></div>
+            </a>
+            <a href="meneertje2.html">
+                <div class="hotspot meneer2"></div>
+            </a>
+            <img src="nachtwacht.jpg" alt="Afbeelding met hotspots" />
+        </div>
+
+        <!-- <svg width="0" height="0">
+            <clipPath id="meneertje1">
+                <polygon
+                    points="574 511, 656 392, 722 399, 737 548, 741 743, 690 784, 605 792, 608 645, 615 545, 571 553, 572 508"
+                ></polygon>
+            </clipPath>
+        </svg> -->
+<svg width="0" height="0"> <clipPath id="meneertje1" clipPathUnits="objectBoundingBox"> <polygon points="0.500 0.470, 0.534 0.426, 0.562 0.453, 0.574 0.705, 0.566 0.854, 0.539 0.881, 0.478 0.880, 0.448 0.846, 0.474 0.706, 0.488 0.597, 0.458 0.564, 0.480 0.519, 0.501 0.471"></polygon> </clipPath> </svg>
+
+
+
+        <svg width="0" height="0">
+            <clipPath id="meneertje2">
+                <polygon
+                    points="753 411, 855 429, 878 691, 860 770, 804 786, 712 781, 746 719, 747 582, 736 492, 737 418, 752 409"
+                ></polygon>
+            </clipPath>
+        </svg>
+    </body>
+</html>
